@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-i = Image.open(r'C:\Users\Gauthier Scherer\Desktop\info\TM\images\A2.jpg')
+i = Image.open(r'C:\Users\Gauthier Scherer\Desktop\info\TM\images\A3.jpg')
 newi = ImageOps.grayscale(i)
 tab = np.array(newi)
 x,y = newi.size
