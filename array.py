@@ -10,10 +10,18 @@ tab = np.array(newi)
 x,y = newi.size
 largeur = x
 hauteur = y
-# for h in range(hauteur) and l in range(largeur):
-#     couleur = newi.getpixel((h,))
-#     print(couleur)
 
+for h in range(hauteur):
+    py = h
+    for l in range(largeur):
+        px =l
+        print (px,py)
+        couleur = newi.getpixel((px,py))
+        print('pixel(',px,py,')=',couleur)
+        if couleur < 200:
+            print ('black')
+        else:
+            print('white')
 
 plt.imshow(newi)
 plt.show()
